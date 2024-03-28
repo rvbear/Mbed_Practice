@@ -10,10 +10,10 @@ void flip() {
 
 int main() 
 {
-    btn.fall(&flip);
+    btn.rise(&flip);
     while(1)
     {
         led1 = !led1;
-        ThisThread::sleep_for(100ms);
+        ThisThread::sleep_for(500ms);
     }
 }
